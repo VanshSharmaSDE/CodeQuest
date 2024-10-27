@@ -1,0 +1,141 @@
+.todo-app {
+    width: 100%;
+    /* max-width: 540px; */
+    background-color: var(--background-color);
+    padding: 20px 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 1rem;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.todo-app::-webkit-scrollbar {
+    display: none;
+}
+
+.todo-app .app-title {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo-app .app-title h2,
+.todo-app .app-title i {
+    color: var(--theme-color);
+}
+
+.todo-app .app-title i {
+    font-size: 26px;
+}
+
+.todo-app .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--dashboard-color);
+    border-radius: 30px;
+}
+
+.todo-app input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 10px;
+    font-size: 17px;
+    padding-left: 20px;
+    color: var(--text-color);
+}
+
+.todo-app input::placeholder{
+    color: var(--text-color);
+}
+
+
+.todo-app button {
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    background-color: var(--theme-color);
+    color: #fff;
+    font-size: 18px;
+    transition: all .25s ease;
+}
+
+.todo-app button:hover {
+    filter: brightness(.8);
+}
+
+.todo-app ul li {
+    color: var(--p-color);
+}
+
+.todo-app ul li span i {
+    color: var(--text-color);
+}
+
+.todo-app ul {
+    list-style: none;
+}
+
+.todo-app ul li {
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    margin-top: 5px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.todo-app ul li::before {
+    position: absolute;
+    content: '';
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    left: 0;
+    border: 2px solid var(--theme-color);
+}
+
+.todo-app ul .checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+.todo-app ul .checked::before {
+    background-color: var(--theme-color);
+}
+
+.todo-app span {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #555;
+    font-size: 18px;
+    transition: all .2s ease;
+}
+
+.todo-app span:hover {
+    /* background-color: #c9c9c9; */
+    color: var(--theme-color);
+}
+
+@media screen and (max-width: 400px) {
+    button {
+        padding: 15px;
+        border-radius: 0 30px 30px 0;
+    }
+}

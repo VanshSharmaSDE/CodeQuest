@@ -1,0 +1,30 @@
+:root {
+    --background-color : #ffff;
+    --text-color: #2C3E50;
+    --p-color: #708492;
+    --theme-color: #bc4037;
+    --background-shadow: rgba(17, 12, 46, 0.15);
+    --dashboard-color:#f7f6f6;
+    --dashboard-bg:#fff;
+    --invert-color:  rgb(17, 12, 46);
+    --hover-dark-color: #f47061;
+    --hover-color: #bd5c55;
+    --background-light: rgb(255, 255, 255);
+    --background-gradient-light: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(154, 52, 45, 0.095) 100%);
+}
+  
+
+.dark-mode{
+    --background-color : #1e1c1c;
+    --text-color: #e0e0e0;
+    --p-color: #E5E3E6;
+    --theme-color: #9a342d;
+    --background-shadow: rgba(117, 117, 121, 0.15);
+    --dashboard-color:#1b16168f;
+    --dashboard-bg:#0000007c;
+    --invert-color:white;
+    --hover-color: #f47061;
+    --hover-dark-color: #773e3a;
+    --background-light: #1e1c1c;
+    --background-gradient-light: linear-gradient(0deg, rgba(30, 28, 28, 1) 0%, rgba(154, 52, 45, 0.095) 100%);
+}

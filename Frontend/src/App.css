@@ -1,0 +1,31 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html::-webkit-scrollbar{
+  display: none;
+}
+
+html,body{
+  width: 100%;
+  height: 100%;
+  font-family: "MyCustomFont", sans-serif;
+}
+
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('../src/assets/Josefin_Sans/JosefinSans-VariableFont_wght.ttf') format('truetype');
+}
+
+
+body{
+  background-color: var(--background-color);
+  transition: background-color 0.8s ease, color 0.8s ease;
+}
+
+a{
+  text-decoration: none;
+  color: var(--text-color);
+}
