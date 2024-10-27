@@ -1,0 +1,92 @@
+.winners-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 20px; */
+}
+
+.competition-cards-container {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+
+.winners-page {
+    color: var(--text-color);
+    text-align: center;
+    width: 100%;
+}
+
+.TWN-back-button {
+    background: var(--theme-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.winners-stage {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    gap: 20px;
+    margin-top: 15%;
+}
+
+.winner-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    border-radius: 8px;
+    background: var(--theme-color);
+    color: white;
+    width: 120px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Specific styling and positioning for winners */
+.first-place {
+    top: -30px;
+    left: 50%;
+    font-size: 1.8rem;
+}
+
+.second-place {
+    left: 10%;
+    bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.third-place {
+    right: 10%;
+    bottom: 15px;
+    font-size: 0.8rem;
+}
+
+/* Trophy Icons */
+.trophy-icon {
+    font-size: 2rem;
+    color: gold;
+    margin-bottom: 10px;
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}

@@ -1,0 +1,288 @@
+.sJC-main {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+.sJC-content-buttons {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: hotpink; */
+    gap: 10px;
+    width: 100%;
+}
+
+.sJC-button {
+    width: 50%;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: 1px solid var(--theme-color);
+}
+
+.sJC-button:hover {
+    background-color: var(--theme-color);
+    color: white;
+}
+
+.isActive {
+    color: white;
+    background-color: var(--theme-color);
+    box-shadow: 0 4px 8px var(--background-shadow);
+}
+
+.LJC {
+    width: 98%;
+    height: 30vh;
+    border-radius: 10px;
+    margin: 10px;
+    color: var(--text-color);
+}
+
+.LJC p {
+    margin-bottom: 15px;
+}
+
+.LJC h1 {
+    font-size: 1.5rem;
+}
+
+.enter_to_join {
+    background-color: var(--theme-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.enter_to_join:hover {
+    background-color: var(--theme-color);
+}
+
+.available_competition {
+    width: 100%;
+    /* height: 8vh; */
+    margin: auto;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    color: var(--text-color);
+    background: var(--background-color);
+    padding: 10px;
+    box-shadow: 0 2px 5px var(--background-shadow);
+    text-align: left;
+    border: 2px solid var(--theme-color);
+}
+
+.available_competition-details p {
+    font-size: small;
+    margin-top: 5px;
+}
+
+.sJC_disabled_button {
+    color: var(--text-color);
+    border: 1px solid;
+    padding: 10px 20px;
+    border-radius: 4px;
+    display: inline-block;
+    cursor: not-allowed;
+    font-weight: 600;
+    background-color: transparent;
+}
+
+.join_modal-overlay {
+    position: absolute;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.541);
+    width: 100vw;
+    box-shadow: var(--background-shadow) 0px 7px 29px 0px;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.join_modal-content {
+    height: 400px;
+    background-color: var(--background-color);
+    border: 2px solid var(--theme-color);
+    width: 400px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 20px;
+}
+
+.join_modal-id {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: small;
+    position: relative;
+}
+
+.join_modal-id h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.join_modal-id input {
+    border-radius: 5px;
+    border: 2px solid var(--theme-color);
+    outline: none;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding: 10px 15px;
+}
+
+.join_modal-id button {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--theme-color);
+    border: none;
+    color: white;
+    font-size: large;
+}
+
+.close-join_modal {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.available_rounds {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    height: 60%;
+    color: var(--text-color);
+    /* background-color: #c4e3ff; */
+}
+
+.display_warning {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1000000;
+    align-items: center;
+    background-color: rgba(2, 2, 2, 9.9);
+    gap: 30px;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+
+.display_warning span {
+    color: red;
+}
+
+.Student_available_rounds-details {
+    background-color: var(--theme-color);
+    margin: 10px 0;
+}
+
+.available_rounds table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.available_rounds th,
+td {
+    border: 1px solid #ddd;
+    padding: 6px;
+}
+
+.available_rounds td {
+    text-align: center;
+    color: white;
+    background-color: var(--theme-color);
+}
+
+.available_rounds th {
+    background-color: var(--theme-color);
+    color: white;
+    font-size: 15px;
+}
+
+.Student_available_rounds-details button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-weight: 700;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+
+.error_messages {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+
+}
+
+.try_again_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.try_again_button i {
+    font-size: 2rem;
+    color: var(--theme-color);
+}
+
+@media (max-width: 1200px) {
+    .sJC-content {
+        margin-top: 4%;
+    }
+}
+
+@media (max-width: 480px) {
+    .join_modal-content {
+        height: 350px;
+        width: 350px;
+
+    }
+
+    .available_rounds {
+        width: 100%;
+        padding: 5px;
+        margin-top: 10px;
+        height: 60%;
+        font-size: 20px;
+    }
+
+    .available_rounds th,
+    td {
+        font-size: 0.8rem;
+    }
+
+    .sJC-button {
+        border: none;
+        padding: 8px 2px;
+    }
+
+    .sJC-content-buttons .sJC-button:nth-child(4) {
+        width: 80px;
+    }
+}

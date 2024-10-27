@@ -1,0 +1,649 @@
+.tHome-main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.tHome-main .hr {
+    border: 2px solid var(--theme-color);
+}
+
+.tHome-events {
+    width: 70%;
+    height: 100%;
+    padding-right: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+
+.tHome-events>h2 {
+    color: var(--theme-color);
+    margin-bottom: 20px;
+}
+
+.tHome-live-competitions {
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    margin-top: 10px;
+    display: flex;
+    overflow-y: scroll;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: start;
+    gap: 20px;
+    /* background-color: white; */
+}
+
+.tHome-live-competitions::-webkit-scrollbar {
+    display: none;
+}
+
+.live-competion-card {
+    width: 30%;
+    height: 50%;
+    border-radius: 20px;
+    /* box-shadow: var(--background-shadow) 0px 7px 29px 0px; */
+    border: 1px solid var(--theme-color);
+    display: flex;
+    flex-direction: column;
+    gap: 1%;
+    padding: 10px;
+}
+
+.live-competion-card-img {
+    width: 100%;
+    height: 49%;
+    background-color: var(--theme-color);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.live-competion-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.live-competion-card-content {
+    width: 100%;
+    height: 50%;
+    border-radius: 15px;
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    flex-direction: column;
+    position: relative;
+}
+
+.live-competion-card-content h3 {
+    color: var(--text-color);
+}
+
+.live-competion-card-button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 10px;
+}
+
+.live-competion-card-button button {
+    padding: 5px 15px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--theme-color);
+    color: white;
+}
+
+.live-competion-card-button button:nth-child(3){
+    background-color: red;
+    transition: all 0.3s ease;
+}
+
+.live-competion-card-button button:nth-child(3):hover{
+    background-color: rgb(216, 1, 1);
+}
+
+
+.T_join_modal-overlay {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(3, 3, 3, 0.199);
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.T_join_modal-content {
+    height: 300px;
+    background-color: var(--background-color);
+    width: 400px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 10px 15px;
+    border: 3px solid var(--theme-color);
+}
+
+.span_class {
+    color: var(--theme-color);
+}
+
+.T_join_modal-id {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: small;
+    position: relative;
+}
+
+.T_join_modal-id h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: var(--theme-color);
+}
+
+.available_rounds-headers {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.close-T_join_modal {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    font-size: 2.5rem;
+    color: var(--text-color);
+}
+
+.edit-competition-button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    text-align: center;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 13px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: var(--theme-color);
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px var(--theme-color);
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(18px);
+    -ms-transform: translateX(18px);
+    transform: translateX(18px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* slider css ended */
+
+.available_rounds {
+    padding: 10px;
+    margin-top: 10px;
+    height: 60%;
+    /* background-color: #c4e3ff; */
+}
+
+.available_rounds-details {
+    /* display: flex; */
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: #68b7fd; */
+    margin: 10px 0;
+}
+
+
+.available_rounds-details button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007BB5;
+    color: white;
+    cursor: pointer;
+}
+
+
+.tHome-analytic {
+    width: 30%;
+    height: 100%;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tHome-analytic h2 {
+    color: var(--text-color);
+}
+
+.tHome-analytic .tHome-analytics-record {
+    width: 100%;
+    height: 25%;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.tHome-analytic .tHome-analytics-record .record {
+    width: 45%;
+    height: 70%;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    color: var(--theme-color);
+    border: 1px solid var(--theme-color);
+    gap: 20px;
+}
+
+.tHome-analytic .tHome-analytics-record .record div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2rem;
+    padding-right: 10px;
+}
+
+.tHome-analytic .tHome-analytics-todo {
+    width: 100%;
+    height: 60%;
+    padding-left: 10px;
+}
+
+.thome-allowance {
+    width: 100%;
+    height: 100%;
+    /* background-color: white; */
+    padding: 10px;
+}
+
+.Allowance-student-list {
+    width: 100%;
+    height: 95%;
+    /* background-color: var(--background-color); */
+    border-radius: 20px;
+    /* padding: 20px; */
+    padding-top: 10px;
+}
+
+.allowance-competition-student-container {
+    display: flex;
+    justify-content: center;
+    /* padding: 20px; */
+}
+
+.allowance-competition-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.allowance-competition-card {
+    color: var(--text-color);
+    border: 1px solid var(--theme-color);
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 2px 10px var(--background-shadow);
+    transition: box-shadow 0.3s;
+}
+
+.allowance-competition-card:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.allowance-competition-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.allowance-competition-description {
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: var(--p-color);
+}
+
+.allowance-show-students-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.show-students-button:hover {
+    background-color: #0056b3;
+}
+
+.student-list-container {
+    width: 100%;
+    padding: 20px;
+    height: 100%;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border: 1px solid var(--theme-color);
+}
+
+.allowance-back-button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    color: var(--theme-color);
+}
+
+.student-list-heading {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.student-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.student-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.allow-button {
+    background-color: #28a745;
+    color: white;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.disallow-button {
+    background-color: #a72828;
+    color: white;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.allow-disallow-button:hover {
+    background-color: #218838;
+}
+
+.tHome-commnunity{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+}
+
+
+
+@media (max-width: 1200px) {
+    .live-competion-card {
+        width: 26%;
+        height: 90%;
+        padding: 15px;
+    }
+
+    .tHome-main {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .tHome-events {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 50vh;
+    }
+
+    .tHome-analytic {
+        width: 100%;
+        padding-bottom: 0;
+        height: 50vh;
+    }
+
+    .tHome-analytic .tHome-analytics-record {
+        width: 100%;
+        padding-left: 0;
+        height: 35%;
+        font-size: 0.9rem;
+    }
+
+    .tHome-analytic .tHome-analytics-record .record div {
+        font-size: 1.5rem;
+    }
+
+    .tHome-analytic .tHome-analytics-todo {
+        padding-left: 0;
+    }
+
+    .tHome-live-competitions {
+        margin-top: 20px;
+        gap: 35px;
+    }
+
+    .todo-app {
+        padding: 20px 30px;
+    }
+
+    .todo-app ul li {
+        font-size: 24px;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .live-competion-card {
+        width: 45%;
+        height: 90%;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .tHome-events>h2 {
+        margin-bottom: 20px;
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+    .tHome-live-competitions {
+        width: 100%;
+        padding-left: 0px;
+        height: 100%;
+        margin-top: 15px;
+        display: flex;
+        overflow-y: scroll;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: start;
+        gap: 40px;
+    }
+
+    .live-competion-card {
+        width: 31%;
+        height: 90%;
+        border-radius: 15px;
+    }
+
+    .tHome-analytic .tHome-analytics-record {
+        width: 100%;
+        padding-left: 0;
+        height: 30%;
+        font-size: 0.9rem;
+    }
+
+    .tHome-analytic .tHome-analytics-record h2 {
+        font-size: 15px;
+    }
+
+    .tHome-analytic .tHome-analytics-record .record div {
+        font-size: 1.3rem;
+        margin-top: -9px;
+    }
+
+    .tHome-analytic .tHome-analytics-todo {
+        width: 100%;
+        height: 53%;
+    }
+
+    .todo-app {
+        padding: 5px 10px;
+    }
+
+    .todo-app ul {
+        overflow-y: scroll;
+        list-style: none;
+    }
+
+    .todo-app ul::-webkit-scrollbar {
+        display: none;
+    }
+
+    .todo-app input {
+        padding: 10px;
+    }
+
+    .todo-app button {
+
+        padding: 10px 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .live-competion-card {
+        width: 44%;
+        height: 93%;
+        border-radius: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .tHome-main {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .tHome-events {
+        display: flex;
+        width: 100%;
+        height: 80vh;
+        padding-right: 0px;
+    }
+
+    .tHome-analytic {
+        width: 100%;
+        padding-bottom: 0;
+        height: 50vh;
+    }
+
+    .tHome-analytic .tHome-analytics-record {
+        padding-left: 0;
+        height: 35%;
+        font-size: 0.9rem;
+    }
+
+    .tHome-analytic .tHome-analytics-record .record div {
+        font-size: 1.5rem;
+    }
+
+    .tHome-analytic .tHome-analytics-todo {
+        padding-left: 0;
+    }
+
+    .tHome-live-competitions {
+        display: block;
+    }
+
+    .live-competion-card {
+        width: 60%;
+        margin-left: 20%;
+        margin-bottom: 20px;
+        height: 60%;
+    }
+
+    .tHome-analytic .tHome-analytics-todo {
+        width: 100%;
+        height: 62%;
+    }
+
+    .T_join_modal-content {
+        height: 280px;
+        width: 350px;
+        padding: 10px 15px;
+        border: 3px solid var(--theme-color);
+    }
+}

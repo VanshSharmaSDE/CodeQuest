@@ -1,0 +1,365 @@
+.D-main{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	background-color: var(--dashboard-color);
+}
+
+/* Dashboard Left side CSS */
+
+.D-sidebar{
+	width: 15%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-left: 10px;
+	padding-top: 20px;
+	gap: 40px;
+	transition: all 0.3s ease;
+}
+
+.D-sidebar h2{
+	font-size: 1.5rem;
+	color: var(--text-color);
+}
+
+.D-sidebar h2 span{
+	color: var(--theme-color);
+}
+
+.D-sidebar .D-profile{
+	width: 100%;
+	height: auto;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.D-sidebar .D-profile .D-profile-image{
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	overflow: hidden;
+	border: 3px solid var(--theme-color);
+}
+
+.D-sidebar .D-profile .D-profile-image img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.D-sidebar .D-profile  h4{
+	position: absolute;
+	bottom: -20%;
+	color: var(--p-color);
+}
+
+.D-profile .D-edit-profile{
+	position: absolute;
+	bottom: 30%;
+	right: 20%;
+	background-color: var(--theme-color);
+	color: white;
+	padding: 5px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.D-sidebar .D-sidebar-navigation{
+	margin-top: 1.5rem;
+	width: 100%;
+	height: auto;
+	display: flex;
+	align-items: start;
+	gap: 25px;
+	flex-direction: column;
+	padding-left: 20px;
+}
+
+.D-sidebar .D-sidebar-navigation h3{
+	cursor: pointer;
+	padding: 10px 0px;
+	width: 100%;
+	padding-inline: 10px;
+	border-radius: 20px;
+	transition: all 0.3s ease;
+	display: flex;
+	justify-content: space-between;
+	color: var(--text-color);
+	/* background-color: white; */
+}
+
+.D-sidebar .D-sidebar-navigation h3:nth-of-type(1){
+	color: var(--invert-color);
+}
+.D-sidebar .D-sidebar-navigation h3:hover{
+    background-color: var(--theme-color);
+	color: white;
+}
+
+.active{
+	background-color: var(--theme-color);
+}
+.white{
+	color: var(--invert-color);
+}
+
+/* Dashboard Right side CSS  */
+
+.D-dashboard {
+	width: 85%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.D-dashboard-navbar {
+	width: 100%;
+	height: 10%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-left: 10px;
+	padding-right: 20px;
+}
+
+.D-dashboard-navbar h2{
+	font-size: 1rem;
+	color: var(--text-color);
+	display: none;
+}
+
+.D-dashboard-navbar h2 span{
+	color: var(--theme-color);
+}
+
+.D-dashboard-navbar .D-dashboard-navbar-searcbar {
+	width: 20%;
+	height: 45%;
+	background-color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-inline: 10px;
+	border-radius: 8px;
+}
+
+.D-dashboard-navbar .D-dashboard-navbar-searcbar input {
+	height: 100%;
+	outline: none;
+	border: none;
+	background-color: transparent;
+}
+
+.D-dashboard-navbar .D-dashboard-navbar-NandD {
+	width: 10%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.D-dashboard-navbar .D-dashboard-navbar-NandD i {
+	font-size: 1rem;
+	padding: 10px;
+	border-radius: 50%;
+	background-color: var(--background-color);
+	border: 1px solid var(--theme-color);
+	color: var(--p-color);
+	transition: all 0.3s ease;
+	cursor: pointer;
+}
+
+.D-dashboard-navbar .D-dashboard-navbar-NandD i:hover {
+	background-color: var(--theme-color);
+	color: white;
+}
+
+.D-dashboard-navbar .D-dashboard-navbar-NandD i:nth-child(3):hover {
+	background-color: red;
+}
+
+.AD_1-dashboard-content {
+	width: 98%;
+	height: 88%;
+	border-radius: 20px;
+	padding: 10px;
+	box-sizing: border-box;
+	border: 3px solid var(--theme-color);
+	background-color: var(--dashboard-bg);
+	overflow-y: scroll;
+}
+
+.AD_1-dashboard-content::-webkit-scrollbar {
+	display: none;
+}
+
+.Admin-menu-button-dashboard{
+	position: absolute;
+    right: 6%;
+    top:13%;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--theme-color);
+    display: none;
+}
+
+/* Responsive Design */
+
+@media (max-width: 1200px) {
+	.D-sidebar{
+		position: absolute;
+		background-color: var(--background-color);
+		width: 30%;
+		left: -80%;
+		padding-left: 0;
+		padding-right: 10px;
+		z-index: 100;
+	}
+	.D-sidebar-responsive{
+		left: 0;
+	}
+	.Admin-menu-button-dashboard{
+		display: flex;
+	}
+	.D-dashboard{
+		width: 100%;
+		overflow: hidden;
+	}
+	.D-dashboard-navbar{
+		justify-content: start;
+		justify-content: space-between;
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+	.D-dashboard-navbar h2{
+		display: initial;
+	}
+	.D-dashboard-navbar .D-dashboard-navbar-searcbar{
+		display: none;
+	}
+	.D-dashboard-navbar .D-dashboard-navbar-NandD{
+		width: auto;
+	}
+	.D-dashboard-navbar .D-dashboard-navbar-NandD i{
+		margin-left: 5px;
+	}
+
+	/* change */
+	.AD_1-dashboard-content {
+        padding-top: 0px;
+    }
+}
+
+@media (max-width: 992px){
+	.D-sidebar {
+       
+        width: 45%;
+
+    }
+	.tHome-analytic .tHome-analytics-todo {
+	
+		height: 50%;
+	}
+}
+@media (max-width: 768px) {
+	.D-sidebar{
+		position: absolute;
+		background-color: var(--background-color);
+		width: 30%;
+		left: -80%;
+		padding-left: 0;
+		padding-right: 10px;
+		z-index: 1000;
+	}
+	.D-sidebar-responsive{
+		left: 0;
+	} 
+	.Admin-menu-button-dashboard{
+		display: flex;
+	}
+	.D-dashboard{
+		width: 100%;
+		overflow: hidden;
+	}
+	.D-dashboard-navbar{
+		justify-content: start;
+		justify-content: space-between;
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+	.D-dashboard-navbar h2{
+		display: initial;
+	}
+	.D-dashboard-navbar .D-dashboard-navbar-searcbar{
+		display: none;
+	}
+	.D-dashboard-navbar .D-dashboard-navbar-NandD{
+		width: auto;
+	}
+	.D-dashboard-navbar .D-dashboard-navbar-NandD i{
+		margin-left: 5px;
+	}
+	.AD_1-dashboard-content {
+		padding-top: 5px;
+	}
+}
+@media (max-width: 576px){
+	.D-sidebar {
+        width: 50%;
+    }
+}
+@media (max-width: 480px) {
+	.AD_1-dashboard-content {
+		padding: 0px 10px;
+	}
+	
+	.D-sidebar{
+		position: absolute;
+		background-color: var(--background-color);
+		width: 80%;
+		left: -80%;
+		padding-left: 0;
+		padding-right: 10px;
+		z-index: 1000;
+	}
+	.D-sidebar-responsive{
+		left: 0;
+	}
+	.Admin-menu-button-dashboard{
+		display: flex;
+	}
+	.D-dashboard{
+		width: 100%;
+		overflow: hidden;
+	}
+	.D-dashboard-navbar{
+		justify-content: start;
+		justify-content: space-between;
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+	.D-dashboard-navbar h2{
+		display: initial;
+	}
+	.D-dashboard-navbar .D-dashboard-navbar-searcbar{
+		display: none;
+	}
+	.D-dashboard-navbar .D-dashboard-navbar-NandD{
+		width: auto;
+	}
+	.D-dashboard-navbar .D-dashboard-navbar-NandD i{
+		margin-left: 5px;
+	}
+
+}

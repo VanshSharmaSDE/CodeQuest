@@ -1,0 +1,415 @@
+/* Full-screen container */
+.quiz-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100000;
+  background-color: var(--dashboard-color);
+  /* Solid dark background for professionalism */
+  color: white;
+  /* White text for contrast */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Timer display */
+.timer {
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  /* background-color: var(--background-color); */
+  color: var(--text-color);
+  padding: 10px 20px;
+  border-radius: 8px;
+  /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); */
+  margin-top: 10px;
+}
+
+.timer p {
+  color: red;
+}
+
+/* Question and answer container */
+.question-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 80%;
+  background-color: var(--background-color);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
+}
+
+.Code-container{
+  flex-direction: column;
+  height: 90%;
+}
+
+/* Question side */
+.question-left {
+  flex: 1;
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding-right: 20px;
+  border-right: 2px solid #444;
+  color: var(--p-color);
+}
+
+.code-left{
+  flex: 0;
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding-inline: 20px;
+  border-right: 2px solid #444;
+  color: var(--p-color);
+  text-align: start;
+}
+
+.question-left h1 {
+  margin-bottom: 15px;
+  color: var(--theme-color);
+}
+
+/* Answer side */
+.answer-right {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.code-right{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.code{
+  width: 50%;
+  height: 50vh;
+}
+
+.run{
+  width: 50%;
+  height: 50vh;
+  margin-top: 17px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.code-runner{
+  width: 100%;
+  height: 120%;
+  padding: 10px;
+  color: white;
+  text-align: start;
+  border: 1px solid white;
+  margin: 10px;
+}
+
+.answer-right h1 {
+  margin-bottom: 15px;
+  color: var(--theme-color);
+}
+
+/* Text area (for text/code answers) */
+.answer-input {
+  width: 100%;
+  height: 90%;
+  background-color: #1e1e1e;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  font-family: 'Courier New', Courier, monospace;
+  /* Professional code/text font */
+  font-size: 1rem;
+  outline: none;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+  resize: none;
+}
+
+/* Submit button */
+.submit-btn {
+  background-color: #008CBA;
+  /* Professional blue button */
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.25rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #005f7a;
+}
+
+.submit-btn:focus {
+  outline: none;
+}
+
+.run-btn {
+  background-color: #00ba47;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 5px;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.run-btn:hover {
+  background-color: #007a02;
+}
+
+/* MCQ options */
+.answer-right input[type="radio"] {
+  margin-right: 10px;
+}
+
+.quiz-bottom {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 10px;
+}
+
+.mcq-option {
+  display: flex;
+  justify-content: space-between;
+  /* Ensures text on left and radio button on right */
+  align-items: center;
+  padding: 10px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.mcq-option:hover {
+  background-color: var(--theme-color);
+  /* Light hover effect */
+}
+
+.mcq-option-text {
+  font-size: 1.2rem;
+  color: var(--text-color);
+}
+
+.mcq-radio {
+  transform: scale(1.3);
+  /* Makes the radio button larger */
+  accent-color: #00ff33;
+  /* Customizes the color of the radio button */
+  cursor: pointer;
+}
+
+.GivingComp-navbar {
+  width: 100%;
+  height: 10%;
+  background-color: var(--theme-color);
+  padding-inline: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  border-radius: 10px;
+}
+
+.GivingComp-navbar h1 {
+  font-size: 2.5rem;
+}
+
+.GivingComp-student-profile {
+  display: flex;
+  /* width: 120px; */
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-right: 10px;
+}
+
+.GivingComp-student-profile img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid white;
+  background-color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .code-runner {  
+    border: none;
+}
+  .mcq-option {
+    flex-direction: column;
+    /* Stacks option text and radio button vertically on small screens */
+    align-items: flex-start;
+  }
+
+  .mcq-radio {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .Code-container {
+    flex-direction: column;
+    height:auto;
+  }
+  .code-right {
+    width: 100%;
+    display: block;
+    align-items: center;
+   height:100%;
+}
+.code {
+  width: 100%;
+  height:50vh;
+}
+.run {
+  width: 100%;
+  height: 50vh;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.GivingComp-navbar {
+  width: 100%;
+  height: 17%;
+  background-color: var(--theme-color);
+  padding-inline: 10px;
+  display: flex;
+  padding: 15px;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  border-radius: 10px;
+}
+.Student_available_rounds-details button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  font-weight: 700;
+  font-size: medium;
+  background-color: #007BB5;
+  color: white;
+  cursor: pointer;
+}
+.code-left {
+  flex: 0;
+  font-size: 1.25rem;
+  font-weight: bold;
+  border-bottom: 2px solid var(--theme-color);
+  border-right: none;
+  padding-inline: 20px;
+  color: var(--p-color);
+  text-align: start;
+}
+.code-right {
+  width: 100%;
+  margin-top: 10px;
+  display: block;
+  align-items: center;
+  height: 100%;
+  /* overflow: auto; */
+}
+}
+
+@media screen and (max-width: 480px) {
+  .quiz-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+    background-color: var(--dashboard-color);
+    color: white;
+    padding: 20px;
+    box-sizing:border-box;
+}
+.answer-right {
+  flex: 1;
+  padding-left:0px;
+}
+.code-left {
+  flex: 0;
+  font-size: larger;
+  border-bottom: 2px solid var(--theme-color);
+  border-right: none;
+  padding-inline: 0px;
+  color: var(--p-color);
+  text-align:start;
+}.Student_available_rounds-details button {
+  padding: 10px 12px;
+  border-radius: 5px;
+  border: none;
+  font-weight: 700;
+  font-size: 12px;
+  cursor:pointer;
+}
+.GivingComp-student-profile img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.GivingComp-navbar h1 {
+  font-size: 1.5rem;
+}
+.timer {
+  font-size: medium;
+  text-align: center;
+  /* background-color: var(--background-color); */
+  color: var(--text-color);
+  padding: 10px 20px;
+  border-radius: 8px;
+  /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); */
+  margin-top:10px;
+}
+.Code-container {
+  flex-direction: column;
+  height:auto;
+}
+.code-runner {
+  width: 100%;
+  height: 120%;
+  padding: 10px;
+
+  border: none;
+ margin:10px;
+}
+.language-select select {
+  padding: 5px 10px;
+  font-size: 1.1rem;
+  outline: none;
+  width: 140px;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+.language-select label {
+  margin-right: 10px;
+  font-size: medium;
+  color: var(--theme-color);
+}
+}
+

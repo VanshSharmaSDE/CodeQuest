@@ -1,0 +1,251 @@
+/* Base Styles */
+.c-main {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 1rem;
+    /* Added padding for better spacing on smaller screens */
+    box-sizing: border-box;
+    z-index: 100;
+    background-color: var(--background-color);
+    transition: background-color 0.8s ease, color 0.9s ease;
+}
+
+.c-background {
+    width: 100%;
+    height: 85%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    /* Ensure full height coverage */
+}
+
+.c-main-left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    text-align: start;
+    padding-left: 10%;
+    box-sizing: border-box;
+}
+
+.c-main-left i {
+    font-size: 8rem;
+    color: var(--theme-color);
+    transition: font-size 0.3s ease;
+}
+
+.c-main-left h1 {
+    font-size: 3rem;
+    color: var(--text-color);
+    transition: font-size 0.3s ease;
+}
+
+.c-main-left p {
+    font-size: 1.25rem;
+    transition: font-size 0.3s ease;
+    color: var(--p-color);
+}
+
+.c-main-right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2.5rem;
+    padding-right: 10%;
+    box-sizing: border-box;
+}
+
+.c-main-right a {
+    width: 80%;
+    height: 27%;
+    display: flex;
+
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.c-main-box-1,
+.c-main-box-2,
+.c-main-box-3 {
+    border: 1px solid var(--theme-color);
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    /* background-color: aqua; */
+    /* padding-left: 5%; */
+    color: var(--text-color);
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.box p {
+    color: var(--p-color);
+}
+
+.box:hover p {
+    color: white;
+}
+
+.c-main-box-1:hover,
+.c-main-box-2:hover,
+.c-main-box-3:hover {
+    background-color: var(--theme-color);
+    color: white;
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+}
+
+.c-main-box-1:active,
+.c-main-box-2:active,
+.c-main-box-3:active {
+    transform: scale(0.95);
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .c-main-left i {
+        font-size: 7rem;
+    }
+
+    .c-main-left h1 {
+        font-size: 2.75rem;
+    }
+
+    .c-main-left p {
+        font-size: 1.25rem;
+    }
+
+    .c-main-box-1,
+    .c-main-box-2,
+    .c-main-box-3 {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 1030px) {
+    .main-intro-left strong {
+        font-size: large;
+    }
+}
+
+@media (max-width: 992px) {
+    .c-main {
+        height: auto;
+        padding: 2rem 1rem;
+        flex-direction: column;
+    }
+
+    .c-background {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .c-main-left,
+    .c-main-right {
+        width: 100%;
+        padding-left: 5%;
+        gap: 60px;
+        padding-right: 5%;
+        text-align: center;
+    }
+
+    .c-main-left i {
+        position: relative;
+        top: 40px;
+        font-size: 6rem;
+    }
+
+    .c-main-left h1 {
+        font-size: 2.5rem;
+    }
+
+    .c-main-left p {
+        font-size: 1.15rem;
+    }
+
+    .c-main-box-1,
+    .c-main-box-2,
+    .c-main-box-3 {
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .c-main-box-1:hover,
+    .c-main-box-2:hover,
+    .c-main-box-3:hover {
+        transform: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .c-main-left i {
+        font-size: 5rem;
+    }
+
+    .c-main-left h1 {
+        font-size: 2rem;
+    }
+
+    .c-main-left p {
+        font-size: 1rem;
+    }
+
+    .guide-profile {
+        width: 100%;
+        padding: 15px;
+        display: block;
+    }
+
+    .intro-profile-card {
+
+        height: 90%;
+        margin-right: auto;
+        margin-left: auto;
+        border: 1px solid var(--theme-color);
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px 10px;
+        gap: 0.5rem;
+        /* margin-right: 22px; */
+    }
+}
+
+@media (max-width: 576px) {
+    .c-main-left i {
+        font-size: 4rem;
+    }
+
+    .c-main-left h1 {
+        font-size: 1.75rem;
+    }
+
+    .c-main-left p {
+        font-size: 0.9rem;
+    }
+
+    .c-main-box-1,
+    .c-main-box-2,
+    .c-main-box-3 {
+        padding: 0.75rem;
+    }
+}

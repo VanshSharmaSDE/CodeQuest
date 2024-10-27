@@ -1,0 +1,88 @@
+.results-container{
+    /* background-color: blueviolet; */
+    height: 100%;
+    width: 100%;
+    padding: 10px 15px;
+}
+
+.results-header{
+    margin-bottom: 20px;
+}
+
+.results-header>h1{
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.results-header span{
+    color: var(--theme-color);
+}
+
+.participants-table{
+    padding: 10px;
+}
+.participants-table table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.results-container th, td {
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    /* min-width: 89px; */
+    /* font-size: 1rem; */
+}
+.results-container td{
+    text-align: center;
+    background-color: #43bff8;
+}
+.results-container th {
+    background-color: var(--theme-color);
+    color: white;
+    font-size: 15px;
+}
+
+.round_selection_button{
+    padding: 5px 10px;
+    margin: 0 10px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid var(--theme-color);
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+.is_selection_active{
+    background-color: var(--theme-color);
+    box-shadow: 0px 0px 20px 0px var(--theme-color);
+    color: white;
+}
+
+.back_to_competition-button{
+    cursor: pointer;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: var(--theme-color);
+    font-size: larger;
+    transition: ease-in-out 0.2s;
+}
+
+.back_to_competition-button:hover{
+    transform: translateX(-5px);
+}
+.error_message{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 85vw;
+}
+.participant-small_header{
+    width: 50px;
+}
+
+.highlighted_student td{
+    background-color: #52c255;
+}

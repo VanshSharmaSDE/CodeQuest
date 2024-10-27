@@ -1,0 +1,225 @@
+.f-main {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.f-background {
+    padding: 10px 0;
+    width: 100%;
+    height: 30vh;
+    /* Change to auto for better responsiveness */
+    background-color: var(--theme-color);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.F-logo,
+.F-content,
+.F-info {
+    flex: 1 1 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.F-info {
+    gap: 10%;
+}
+
+.F-info .F-social {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5rem;
+}
+
+.F-info .F-social i {
+    transition: all 0.3s ease;
+}
+
+.F-info .F-social i:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.F-logo {
+    font-size: 2rem;
+}
+
+.F-logo h3 {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.F-logo h3 sub {
+    margin-top: 20px;
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+.F-content {
+    gap: 10%;
+}
+
+.F-content .F-input input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    font-size: 1.2rem;
+    outline: none;
+    color: white;
+    padding: 0 10px;
+}
+
+.F-content .F-input input::placeholder {
+    color: white;
+}
+
+.F-content .F-input button {
+    background-color: transparent;
+    border: 2px solid white;
+    font-size: 1.2rem;
+    color: white;
+    padding: 0 20px;
+    transition: all 0.3s ease;
+}
+
+.F-content .F-input button:hover {
+    background-color: white;
+    cursor: pointer;
+    color: var(--theme-color);
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+
+    .F-logo,
+    .F-content,
+    .F-info {
+        flex: 1 1 30%;
+        /* Adjust flex basis for better fit */
+    }
+
+    .F-info .F-social {
+        font-size: 1.4rem;
+    }
+
+    .F-content .F-input input {
+        font-size: 1.1rem;
+    }
+
+    .F-content .F-input button {
+        font-size: 1.1rem;
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 992px) {
+    .f-background {
+        padding: 20px 0;
+    }
+
+    .F-logo,
+    .F-content,
+    .F-info {
+        flex: 1 1 100%;
+        /* Full width for each section */
+        margin-bottom: 1rem;
+        /* Add margin to separate sections */
+    }
+
+    .F-logo {
+        font-size: 1.5rem;
+    }
+
+    .F-info {
+        gap: 10%;
+    }
+
+    .F-info .F-social {
+        font-size: 1.2rem;
+        width: 50%;
+        /* Adjust width to fit better */
+    }
+
+    .F-content .F-input input {
+        font-size: 1rem;
+    }
+
+    .F-content .F-input button {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .f-background {
+        padding: 20px 0;
+    }
+
+    .F-logo,
+    .F-content,
+    .F-info {
+        flex: 1 1 100%;
+        /* Full width for each section */
+        margin-bottom: 1rem;
+        /* Add margin for spacing */
+    }
+
+    .F-logo {
+        font-size: 1.25rem;
+    }
+
+    .F-info .F-social {
+        font-size: 1rem;
+        width: 60%;
+        /* Adjust width to fit better */
+    }
+
+    .F-content .F-input input {
+        font-size: 0.9rem;
+    }
+
+    .F-content .F-input button {
+        font-size: 0.9rem;
+        padding: 0 8px;
+    }
+}
+
+@media (max-width: 576px) {
+    .F-logo {
+        font-size: 1rem;
+    }
+
+    .F-info .F-social {
+        font-size: 0.9rem;
+        width: 70%;
+        /* Adjust width to fit better */
+    }
+
+    .F-content .F-input input {
+        font-size: 0.8rem;
+    }
+
+    .F-content .F-input button {
+        font-size: 0.8rem;
+        padding: 0 6px;
+    }
+
+    .F-info {
+        gap: 10%;
+    }
+}

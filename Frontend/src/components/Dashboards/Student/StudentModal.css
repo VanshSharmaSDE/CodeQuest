@@ -1,0 +1,115 @@
+/* StudentModal.css */
+.StudentModal.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+ .StudentModal .modal-content {
+    background-color: var(--background-color);
+    border-radius: 8px;
+    padding: 20px;
+    width: 400px;
+    position: relative;
+  }
+  
+.StudentModal  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+.StudentModal  .modal-title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+.StudentModal  .close-btn {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: var(--text-color);
+  }
+  
+.StudentModal  .modal-body {
+    margin-top: 20px;
+  }
+  
+.StudentModal  .form-group {
+    margin-bottom: 15px;
+  }
+  
+.StudentModal  .form-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--text-color);
+  }
+
+  .StudentModal  input{
+    color: var(--text-color);
+    /* outline: var(--p-color); */
+  }
+  
+ .StudentModal .form-control {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--p-color);
+    border-radius: 4px;
+  }
+  
+.StudentModal  .form-control[readonly] {
+    background-color: var(--background-color);
+  }
+  
+.StudentModal  .buttons {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+.StudentModal  button {
+    padding: 8px 16px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+.StudentModal  button.edit-btn {
+    background-color: #ffcc00;
+    color: white;
+  }
+  
+.StudentModal  button.save-btn {
+    background-color: #28a745;
+    color: white;
+  }
+  
+.StudentModal  button:hover {
+    opacity: 0.9;
+  }
+  
+.StudentModal  img.rounded-circle {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+  }
+  
+.StudentModal  hr {
+    margin: 20px 0;
+  }
+
+  .studentmodal-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  

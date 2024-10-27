@@ -1,0 +1,97 @@
+.student-answers-main {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background-color: var(--background-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
+
+.student-answers-main h2 span{
+  color: var(--theme-color);
+  text-transform: capitalize;
+}
+
+.submission-section {
+  margin-bottom: 25px;
+}
+
+.answers-list {
+  margin-top: 15px;
+}
+
+.answer-card {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  margin-bottom: 10px;
+  position: relative;
+  box-shadow: var(--background-shadow) 0px 18px 25px 0px;
+}
+.checked_result{
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.checked_result .correct{
+  color: green;
+  font-size: 1.5rem;
+}
+.checked_result .incorrect{
+  color: red;
+  font-size: 1.5rem;
+}
+/* .answer-card {
+  max-height: 400px; 
+  overflow-y: auto; 
+  margin-bottom: 20px; 
+}
+
+.monaco-editor {
+  border: 1px solid #ccc; 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+} */
+
+.question {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.answer {
+  font-size: 14px;
+  color: #555;
+}
+
+
+.answer .correct{
+  position: absolute;
+  right: 5px;
+  top: -5px;
+  padding: 5px 15px;
+  border-radius: 10px;
+  background-color: green;
+  border: none;
+}
+
+.answer .wrong{
+  position: absolute;
+  right: 50px;
+  top: -5px;
+  padding: 5px 15px;
+  border-radius: 10px;
+  background-color: red;
+  border: none;
+}
+
+.output-section pre{
+  margin-top: 10px;
+  width: 100%;
+  height: 100px;
+  border: 1px solid var(--theme-color);
+  border-radius:10px;
+  padding: 10px;
+}

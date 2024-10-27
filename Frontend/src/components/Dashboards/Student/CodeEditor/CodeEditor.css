@@ -1,0 +1,33 @@
+.code-editor-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .language-select {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .language-select label {
+    margin-right: 10px;
+    font-size: 1.2rem;
+    color: var(--theme-color);
+  }
+  
+  .language-select select {
+    padding: 5px;
+    font-size: 1.1rem;
+    background-color: var(--background-color);
+    color: var(--theme-color); /* Highlight selected language */
+    border: 1px solid var(--theme-color);
+    outline: none;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .language-select select:hover {
+    background-color: var(--background-color);
+  }
+  

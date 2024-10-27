@@ -1,0 +1,156 @@
+.create-competition {
+  padding: 20px;
+  margin: 15px;
+  text-align: center;
+  height: auto;
+  overflow-y: auto;
+}
+
+.create-competition h2 {
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
+
+.create-competition h3 {
+  color: var(--p-color);
+  margin-bottom: 20px;
+}
+
+.plus-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-inline: 5px;
+  padding: initial;
+}
+
+.plus-button:hover {
+  background-color: #45a049;
+}
+
+.edit-competition-button, .delete{
+  background-color: transparent;
+  color: white;
+  border: none;
+  padding: 5px ;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  text-align: center;
+}
+.edit-competition-button i{
+  font-size: 1.5rem;
+}
+
+.btn-animation{
+  transition: 0.2s ease-in;
+  color: #45a049;
+}
+
+.btn-animation:hover {
+  background-color: #45a049;
+  color: white;
+  scale: 1.2;
+  box-shadow: 0px 0px 10px var(--hover-color);
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  background-color: var(--background-color);
+}
+
+.modal-content h3 {
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid var(--p-color);
+  border-radius: 4px;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+.create-button {
+  border: 1px solid #4CAF50;
+  color: var(--p-color);
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  background-color: var(--background-color);
+}
+
+.create-button:hover {
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid transparent;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: var(--text-color);
+}
+
+.competition-list {
+  margin-top: 30px;
+}
+
+.competition-button-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.competition-item {
+  background: var(--background-color);
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px var(--background-shadow);
+  text-align: left;
+}
+
+.competition-item h4 {
+  margin: 0 0 10px 0;
+  color: var(--theme-color);
+}
+@media (max-width: 480px) {
+  .modal-content {
+    padding: 20px;
+    border-radius: 8px;
+    width: 330px;
+  }
+}
+
+

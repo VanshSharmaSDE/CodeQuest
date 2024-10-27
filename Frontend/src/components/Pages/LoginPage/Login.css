@@ -1,0 +1,267 @@
+.login-main {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--background-color);
+    transition: background-color 0.8s ease, color 0.8s ease;
+}
+
+.login-main nav {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+
+.login-main nav h1,
+.login-main nav i {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--theme-color);
+    cursor: pointer;
+}
+
+.login-content {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container {
+    width: 95%;
+    height: 95%;
+    display: flex;
+    border-radius: 30px;
+    box-shadow: var(--background-shadow) 0px 48px 100px 0px;
+}
+
+.login-container .l-left {
+    width: 65%;
+    height: 100%;
+    background-color: var(--background-color);
+}
+
+.login-container .l-left img {
+    width: 85%;
+    height: 85%;
+    object-fit: contain;
+    margin-top: 15px;
+}
+
+.forgot-password {
+    cursor: pointer;
+}
+
+.l-right {
+    width: 40%;
+    height: 100%;
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1.2rem 0rem;
+}
+
+.l-right-heading h1 {
+    margin-bottom: 15px;
+    color: var(--text-color);
+}
+
+.l-right p {
+    color: var(--p-color);
+}
+
+.l-right-input {
+    width: 90%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.l-right-input .login-input {
+    width: 70%;
+    border-radius: 10px;
+    box-shadow: var(--background-shadow) 0px 48px 100px 0px;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+.l-right-input .login-input input {
+    border: none;
+    width: 100%;
+    padding: 1rem 0rem;
+    font-size: 1.2rem;
+    outline: none;
+    background-color: transparent;
+    color: var(--text-color);
+}
+
+.l-right-input .login-input input::placeholder {
+    color: var(--p-color);
+}
+
+.login-input i {
+    color: var(--text-color);
+}
+
+.R-F {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    color: var(--p-color);
+}
+
+.login-buttons {
+    width: 70%;
+    display: flex;
+    gap: 5%;
+    justify-content: start;
+}
+
+.login-buttons button {
+    width: 45%;
+    padding: 2% 0%;
+    border: none;
+    background-color: var(--theme-color);
+    color: white;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.login-buttons button:nth-child(2) {
+    background-color: white;
+    color: black;
+}
+
+
+/* Responsive Styles */
+@media only screen and (max-width: 1200px) {
+    .login-main {
+        width: 100%;
+        height: 200vh;
+
+    }
+
+    .login-content {
+        width: 100%;
+        height: 100%;
+    }
+
+    .login-main nav {
+        padding: 0px 30px;
+    }
+
+    .login-container .l-left,
+    .l-right {
+        width: 100%;
+        height: 100%;
+    }
+
+    .login-container .l-left img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        margin-top: 0px;
+    }
+
+    .l-right {
+        align-items: center;
+        padding: 1.2rem;
+    }
+
+    .login-buttons {
+        width: 90%;
+    }
+
+    .l-right-input .login-input {
+        width: 90%;
+    }
+
+    .R-F {
+        width: 90%;
+    }
+
+    .login-container {
+        position: relative;
+        flex-direction: column;
+        height: 100%;
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 992px) {}
+
+@media only screen and (max-width: 768px) {
+    .login-main {
+        width: 100%;
+        height: 150vh;
+    }
+
+    .login-main nav h1 {
+        font-size: 1.5rem;
+        margin-left: 10px;
+    }
+
+    .login-container {
+        width: 100%;
+        height: auto;
+    }
+
+    .login-buttons button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .l-right-input .login-input {
+        width: 100%;
+    }
+
+    .R-F {
+        width: 100%;
+        height: 40px;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .login-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+
+    .l-right-heading h1 {
+        text-align: center;
+    }
+
+    .login-main {
+        width: 100%;
+        height: 120vh;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .login-main {
+        width: 100%;
+        height: 110vh;
+    }
+
+    .login-main nav h1 {
+        font-size: 1.2rem;
+    }
+
+    .login-buttons button {
+        font-size: 1rem;
+        padding: 1.5% 0%;
+    }
+}

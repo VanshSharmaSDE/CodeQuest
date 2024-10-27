@@ -1,0 +1,46 @@
+.tSc-main{
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tSc-main h1{
+    color: var(--text-color);
+}
+
+.tSC-saved_comp_container{
+    width: 100%;
+    height: 90%;
+    overflow-y: auto;
+    /* background-color: violet; */
+    padding: 10px;
+}
+
+.error_message{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    color: var(--p-color);
+}
+
+.editcompi-false{
+    color: var(--p-color);
+}
+
+.editcompi{
+    color: var(--theme-color);
+}
+.competition-item{
+    border: 2px solid var(--theme-color);
+}
+@media (max-width: 480px) {
+    .tSc-main h1 {
+        font-size: 23px;
+        color: var(--text-color);
+    }
+}

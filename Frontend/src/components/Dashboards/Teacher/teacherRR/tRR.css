@@ -1,0 +1,295 @@
+.tRR-main {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.competition-cards-container-section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-left: 30px;
+}
+
+
+.competition-cards-container h2 {
+    color: var(--text-color);
+    margin: 10px;
+    margin-top: 30px;
+}
+
+.competition-cards-container hr {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.check-result-card {
+    width: 300px;
+    /* height: 120px; */
+    border: 1px solid var(--theme-color);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--text-color);
+    /* background-image: url(../../../../assets/CompetitionImage.png); */
+    background-size: cover;
+    background-repeat: none;
+}
+
+.check-result-card h2{
+    margin-bottom: 30px;
+}
+
+.check-result-card button {
+    padding: 10px 25px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-inline: 5px;
+    transition: all 0.3s ease;
+    margin: 5px;
+}
+
+.check-result-card button:hover {
+    background-color: var(--text-color);
+    color: var(--background-color);
+}
+
+.round-buttons {
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.round-buttons h2{
+    margin: 10px;
+}
+
+.round-buttons hr{
+    margin-bottom: 20px;
+}
+
+.round-buttons h2 i{
+    cursor: pointer;
+    color: var(--theme-color);
+}
+
+.round-buttons button {
+    padding: 10px 25px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border: 1px solid var(--theme-color);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-right: 10px;
+    /* margin-top: 10px; */
+}
+
+.round-buttons button:hover {
+    background-color: var(--text-color);
+    color: var(--background-color);
+}
+
+.student-list-main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.student-list-main h2 {
+    margin: 10px;
+    color: var(--text-color);
+}
+
+.student-list-main h2 i {
+    cursor: pointer;
+    color: var(--theme-color);
+}
+
+.student-list-main hr {
+    margin-bottom: 20px;
+}
+
+.student-list {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-inline: 10px;
+}
+
+.student-list::-webkit-scrollbar {
+    display: none;
+}
+
+.student-list-card {
+    width: 100%;
+    height: 15%;
+    border-radius: 10px;
+    background-color: var(--background-color);
+    box-shadow: var(--background-shadow) 0px 28px 50px 0px;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--text-color);
+}
+
+.student-list-card h3{
+    color: var(--theme-color);
+    text-transform: capitalize;
+}
+
+.student-list-card button{
+    padding: 10px 25px;
+    background-color: var(--theme-color);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid var(--theme-color);
+}
+
+.student-list-card button:hover{
+    background-color: var(--text-color);
+    color: var(--background-color); 
+}
+
+.student-answers button {
+    padding: 10px 25px;
+    background-color: var(--theme-color);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid var(--theme-color);
+}
+
+.student-answers button:hover{
+    background-color: var(--text-color);
+    color: var(--background-color); 
+}
+
+.answer-item{
+    height: 100%;
+    overflow: scroll;
+}
+
+.answer-item::-webkit-scrollbar{
+    display: none;
+}
+
+.default{
+    color: var(--text-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.navbar {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 20px;
+  }
+  
+  .navbar button {
+    width: 50%;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: 1px solid var(--theme-color);
+  }
+  
+  .navbar button:hover {
+    background-color: var(--theme-color);
+    color: white;
+  }
+  
+  .navbar button.active {
+    color: white;
+    background-color: var(--theme-color);
+    box-shadow: 0 4px 8px var(--background-shadow);
+  }
+
+  .live-competion-card-result {
+    width: 20%;
+    height: 300px;
+    border-radius: 20px;
+    border: 1px solid var(--theme-color);
+    display: flex;
+    flex-direction: column;
+    gap: 1%;
+    padding: 10px;
+}
+
+.live-competion-card-img-result {
+    width: 100%;
+    height: 49%;
+    background-color: var(--theme-color);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.live-competion-card-img-result img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.live-competion-card-allowance {
+    width: 30%;
+    height: 300px;
+    border-radius: 20px;
+    border: 1px solid var(--theme-color);
+    display: flex;
+    flex-direction: column;
+    gap: 1%;
+    padding: 10px;
+}
+
+  @media (max-width: 480px) {
+    .tRR-main {
+    
+        margin-top: 30px;
+    
+    }
+    .competition-cards-container h2 {
+        color: var(--text-color);
+        margin: 10px;
+        padding: 0px;
+    }
+    .competition-cards-container-section {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: start;
+        justify-content: center;
+        gap: 20px;
+    }
+
+}

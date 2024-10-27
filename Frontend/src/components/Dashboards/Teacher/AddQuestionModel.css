@@ -1,0 +1,56 @@
+.modal-content{
+  border: 2px solid var(--theme-color);
+}
+.form{
+  color: var(--text-color);
+  padding: 10px;
+
+}
+.modal-content input{
+  border: 2px solid var(--theme-color);
+  outline: none;
+}
+.form .AddQuestionBtn{
+  padding: 8px;
+  font-weight: 600;
+  font-size:14px;
+  border-radius: 7px;
+  cursor: pointer;
+  color: white;
+  border :none;
+  background-color:var(--theme-color);
+  transition: 0.3s ease-in-out;
+}
+.form .AddQuestionBtn:hover{
+  background-color:var(--hover-dark-color);
+}
+
+.form div textarea{
+   width: 350px;
+   outline: none;
+   border: 2px solid var(--theme-color);
+   height: 70px;
+   border-radius: 5px;
+   padding: 4px;
+   background-color: var(--background-color);
+   color: var(--text-color);
+   resize: none;
+}
+form .AddQuestionBtn{
+  width: 100%;
+}
+@media (max-width: 480px) {
+  .modal-content {
+    background: var(--background-color);
+    padding: 10px;
+}
+  .form div textarea{
+    width: 270px;
+    margin-top: 10px;
+    height: 80px;
+    resize: none;
+ }
+  .form  .AddQuestionBtn{
+       margin-top: 10px;
+ }
+}

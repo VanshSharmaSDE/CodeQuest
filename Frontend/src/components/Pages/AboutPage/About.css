@@ -1,0 +1,347 @@
+.a-main {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 1rem;
+    z-index: 99;
+    background-color: var(--background-color);
+    transition: background-color 0.8s ease, color 0.8s ease;
+
+}
+
+.a-background {
+    width: 90%;
+    /* max-width: 1200px; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    background: var(--background-light);
+    background: var(--background-gradient-light);
+}
+
+.a-main-line {
+    width: 2px;
+    height: 100px;
+    background-color: var(--text-color);
+    margin: 1rem 0;
+}
+
+.a-background h1 {
+    margin-top: 2rem;
+    font-size: 3.5rem;
+    color: var(--theme-color);
+    text-align: center;
+}
+
+.vision-paragraph {
+    width: 90%;
+    max-width: 800px;
+    font-size: 1rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: var(--p-color);
+}
+
+.vision-paragraph i {
+    font-size: 5rem;
+    color: var(--theme-color);
+}
+
+.a-main-mission-circles {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.a-main-circle-1,
+.a-main-circle-2,
+.a-main-circle-3 {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 1rem;
+}
+
+.a-main-circle-1 {
+    background-color: #36454F;
+    z-index: 10;
+    border-right: 1px solid #708492;
+    opacity: 0.9;
+}
+
+.a-main-circle-2 {
+    background-color: #36454F;
+    z-index: 9;
+    opacity: 0.9;
+}
+
+.a-main-circle-3 {
+    background-color: var(--theme-color);
+    z-index: 8;
+}
+
+.main-intro-left strong .ri-play-large-fill {
+    color: var(--theme-color);
+}
+
+.a-main-intro-section {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    margin-bottom: 5rem;
+    align-items: center;
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-between;
+    border-radius: 20px;
+    box-shadow: var(--background-shadow) 0px 48px 100px 0px;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.a-main-demo-dashboard {
+    width: 100%;
+    /* height: 85%;  */
+    overflow: hidden;
+}
+
+.a-main-demo-dashboard img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-intro-left {
+    width: 100%;
+    /* max-width: 800px; */
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    text-align: start;
+    font-size: 1rem;
+    word-spacing: 5px;
+    color: var(--p-color);
+    margin-top: 20px;
+}
+
+.left-2 {
+    max-width: 800px;
+}
+
+.main-intro-left span {
+    color: var(--theme-color);
+}
+
+.guide-profile {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid var(--theme-color);
+    border-radius: 20px;
+    margin-top: 30px;
+    justify-content: start;
+    align-items: start;
+}
+
+.intro-profile-card {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border: 1px solid var(--theme-color);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 10px;
+    gap: 0.5rem;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.intro-profile-card img {
+    width: 100%;
+    height: 278px;
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.intro-profile-card h2 {
+    font-size: 1.2rem;
+    height: fit-content;
+    color: var(--theme-color);
+}
+
+.intro-profile-card button {
+    padding: 5px 20px;
+    border: none;
+    font-size: 1rem;
+    border-radius: 10px;
+    color: var(--theme-color);
+    margin-inline: 5px;
+}
+
+
+.intro-profile-card button:hover {
+    color: white;
+    background-color: var(--theme-color);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.main-intro-left strong {
+    line-height: 30px;
+}
+
+.main-intro-left strong hr {
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.main-intro-left strong a {
+    margin-left: 20px;
+    font-size: 1.2rem;
+    color: var(--theme-color);
+}
+
+.feature-section {
+    padding: 50px 20px;
+    text-align: center;
+    /* background-color: #f8f9fc; */
+  }
+  
+  .features-title {
+    color: #c62828;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  
+  .features-heading {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  
+  .features-subheading {
+    font-size: 18px;
+    color: var(--p-color);
+    margin-bottom: 50px;
+  }
+  
+  .features-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .feature-card {
+    background: var(--background-color);
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 6px var(--background-shadow);
+    border-radius: 10px;
+    width: 300px;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .feature-icon {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .feature-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--text-color);
+  }
+  
+  .feature-description {
+    font-size: 16px;
+    color: var(--p-color);
+    /* text-align: start; */
+  }
+  
+  @media (max-width: 768px) {
+    .features-heading {
+      font-size: 28px;
+    }
+  
+    .feature-card {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  
+
+@media (min-width: 1024px) {
+    .a-background h1 {
+        font-size: 6rem;
+    }
+
+    .vision-paragraph {
+        font-size: 1.5rem;
+    }
+
+    .main-intro-left {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .a-background h1 {
+        font-size: 4rem;
+    }
+
+    .vision-paragraph {
+        font-size: 1.5rem;
+    }
+
+    .a-main-mission-circles {
+        height: 15rem;
+    }
+
+    .a-main-circle-1,
+    .a-main-circle-2,
+    .a-main-circle-3 {
+        width: 12rem;
+        height: 12rem;
+    }
+
+    .main-intro-left {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .main-intro-left strong {
+        font-size: large;
+        text-align: justify;
+    }
+}
